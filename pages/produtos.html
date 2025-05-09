@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - JAFA Indu00fastria de Borracha e Poliuretano</title>
+    <title>Contato - JAFA Indústria de Borracha e Poliuretano</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -22,7 +22,6 @@
                 <div class="md:hidden flex items-center">
                     <button class="outline-none mobile-menu-button">
                         <svg class="w-6 h-6 text-gray-200 hover:text-[#488A31]"
-                            x-show="!showMenu"
                             fill="none"
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -57,295 +56,59 @@
     <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-[#070F0A] text-white">
         <div class="container mx-auto px-4">
             <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">Nossos Produtos</h1>
-                <p class="text-lg text-gray-300 max-w-3xl mx-auto animate-fadeIn">Soluções em borracha e poliuretano para diversas aplicações industriais</p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">Entre em Contato</h1>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto animate-fadeIn">Estamos prontos para atender suas necessidades com soluções em borracha e poliuretano. Preencha o formulário abaixo!</p>
             </div>
         </div>
     </section>
 
-    <!-- Product Categories Navigation -->
-    <section class="py-8 bg-white border-b">
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#borracha" class="px-6 py-3 bg-gray-100 hover:bg-[#488A31] hover:text-white rounded-lg transition duration-300 font-medium">Borracha Natural</a>
-                <a href="#poliuretano" class="px-6 py-3 bg-gray-100 hover:bg-[#488A31] hover:text-white rounded-lg transition duration-300 font-medium">Poliuretano Industrial</a>
-                <a href="#personalizados" class="px-6 py-3 bg-gray-100 hover:bg-[#488A31] hover:text-white rounded-lg transition duration-300 font-medium">Produtos Personalizados</a>
-                <a href="#acessorios" class="px-6 py-3 bg-gray-100 hover:bg-[#488A31] hover:text-white rounded-lg transition duration-300 font-medium">Acessórios Industriais</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Borracha Natural Section -->
-    <section id="borracha" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 animate-slideInLeft">
-                    <img src="/assets/linhaBorracha.jpeg" alt="Produtos de Borracha Natural" class="rounded-xl shadow-xl w-full">
-                </div>
-                
-                <div class="md:w-1/2 md:pl-12 animate-slideInRight">
-                    <h2 class="text-3xl font-bold text-[#070F0A] mb-6">Borracha Natural</h2>
-                    <p class="text-gray-700 mb-4">Nossa linha de produtos em borracha natural oferece excelência em durabilidade e resistêancia para diversas aplicações industriais.</p>
-                    <p class="text-gray-700 mb-6">Fabricados com matéria-prima de alta qualidade e processos rigorosos de controle, nossos produtos atendem às mais exigentes especificações técnicas.</p>
-                    
-                    <div class="mb-6">
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Alta resistência a abrasão e desgaste</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Excelente elasticidade e flexibilidade</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Resistêancia a condições climáticas adversas</span>
-                        </div>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-md">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="nome" class="block text-sm font-medium text-[#070F0A]">Nome</label>
+                        <input type="text" id="nome" name="nome" required
+                               class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#488A31] focus:border-[#488A31]"
+                               placeholder="Seu nome">
                     </div>
-                    
-                    <a href="/pages/contato.html" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                        Solicitar Orçamento <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Borracha Products Grid -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaBorracha2.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Aneis de Vedação</h3>
-                        <p class="text-gray-600 text-sm mb-3">Aneis de borracha para vedação em diversos tamanhos e especificações.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-[#070F0A]">E-mail</label>
+                        <input type="email" id="email" name="email" required
+                               class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#488A31] focus:border-[#488A31]"
+                               placeholder="seu.email@exemplo.com">
                     </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaBorracha3.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Coxins Antivibratórios</h3>
-                        <p class="text-gray-600 text-sm mb-3">Coxins para absorção de impacto e redução de vibrações em equipamentos.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
+                    <div>
+                        <label for="telefone" class="block text-sm font-medium text-[#070F0A]">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone"
+                               class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#488A31] focus:border-[#488A31]"
+                               placeholder="(XX) XXXX-XXXX">
                     </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaBorracha4.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Perfis Extrudados</h3>
-                        <p class="text-gray-600 text-sm mb-3">Perfis de borracha extrudados para diversas aplicações industriais.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
+                    <div>
+                        <label for="assunto" class="block text-sm font-medium text-[#070F0A]">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" required
+                               class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#488A31] focus:border-[#488A31]"
+                               placeholder="Assunto da mensagem">
                     </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaBorracha.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Mantas de Borracha</h3>
-                        <p class="text-gray-600 text-sm mb-3">Mantas de borracha em diversas espessuras e composições.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
+                    <div>
+                        <label for="mensagem" class="block text-sm font-medium text-[#070F0A]">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required rows="5"
+                                  class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#488A31] focus:border-[#488A31]"
+                                  placeholder="Sua mensagem"></textarea>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Poliuretano Section -->
-    <section id="poliuretano" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row-reverse items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pl-12 animate-slideInRight">
-                    <img src="/assets/linhaPU.jpeg" alt="Produtos de Poliuretano" class="rounded-xl shadow-xl w-full">
-                </div>
-                
-                <div class="md:w-1/2 md:pr-12 animate-slideInLeft">
-                    <h2 class="text-3xl font-bold text-[#070F0A] mb-6">Poliuretano Industrial</h2>
-                    <p class="text-gray-700 mb-4">Nossos produtos em poliuretano combinam resistência mecânica superior com excelente flexibilidade, sendo ideais para aplicações que exigem alta performance.</p>
-                    <p class="text-gray-700 mb-6">Desenvolvidos com tecnologia avançada, oferecem durabilidade excepcional mesmo em ambientes agressivos e condições extremas de uso.</p>
-                    
-                    <div class="mb-6">
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Resistência superior a abrasão e rasgamento</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Excelente resistência a óleos e solventes</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Alta capacidade de carga e baixa deformação</span>
-                        </div>
+                    <!-- reCAPTCHA (Opcional) -->
+                    <!-- Descomente e substitua 'SUA_CHAVE_RECAPTCHA' pela chave do site do Google reCAPTCHA -->
+                    <!--
+                    <div class="g-recaptcha" data-sitekey="SUA_CHAVE_RECAPTCHA"></div>
+                    -->
+                    <div>
+                        <button type="submit"
+                                class="w-full bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                            Enviar Mensagem <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
                     </div>
-                    
-                    <a href="/pages/contato.html" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                        Solicitar Orçamento <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Poliuretano Products Grid -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaPU.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Rodas de Poliuretano</h3>
-                        <p class="text-gray-600 text-sm mb-3">Rodas industriais de alta resistência para diversas aplicações.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
-                    </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaPU2.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Revestimentos</h3>
-                        <p class="text-gray-600 text-sm mb-3">Revestimentos em poliuretano para proteção de superfícies e equipamentos.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
-                    </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaPU.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Acoplamentos</h3>
-                        <p class="text-gray-600 text-sm mb-3">Acoplamentos flexíveis em poliuretano para transmissão de potência.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
-                    </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaPU2.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Raspadores</h3>
-                        <p class="text-gray-600 text-sm mb-3">Raspadores de poliuretano para esteiras transportadoras e equipamentos.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Personalizados Section -->
-    <section id="personalizados" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12 animate-fadeIn">
-                <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Produtos Personalizados</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Desenvolvemos soluções sob medida para atender às necessidades específicas de cada cliente</p>
-                <div class="w-24 h-1 bg-[#488A31] mx-auto mt-4"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 animate-slideInLeft">
-                    <div class="text-[#488A31] text-4xl mb-4">
-                        <i class="fas fa-drafting-compass"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-[#070F0A] mb-3">Projeto e Desenvolvimento</h3>
-                    <p class="text-gray-600">Nossa equipe técnica trabalha em conjunto com o cliente para desenvolver soluções que atendam exatamente às suas necessidades.</p>
-                </div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 animate-fadeIn">
-                    <div class="text-[#488A31] text-4xl mb-4">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-[#070F0A] mb-3">Fabricação Especializada</h3>
-                    <p class="text-gray-600">Utilizamos processos de fabricação avançados para produzir peças com as especificações exatas requeridas.</p>
-                </div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 animate-slideInRight">
-                    <div class="text-[#488A31] text-4xl mb-4">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-[#070F0A] mb-3">Testes e Validação</h3>
-                    <p class="text-gray-600">Realizamos testes rigorosos para garantir que os produtos personalizados atendam a todos os requisitos de desempenho.</p>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="/pages/contato.html" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                    Solicite um Projeto Personalizado <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Acessórios Section -->
-    <section id="acessorios" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12 animate-fadeIn">
-                <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Acessórios Industriais</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Complementos e acessórios para diversas aplicações industriais</p>
-                <div class="w-24 h-1 bg-[#488A31] mx-auto mt-4"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaBorracha2.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Juntas de Vedação</h3>
-                        <p class="text-gray-600 text-sm mb-3">Juntas para vedação de fluidos em equipamentos industriais.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
-                    </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaPU.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Amortecedores</h3>
-                        <p class="text-gray-600 text-sm mb-3">Amortecedores de impacto para proteção de equipamentos.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
-                    </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaBorracha4.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Buchas e Espaçadores</h3>
-                        <p class="text-gray-600 text-sm mb-3">Buchas e espaçadores para montagens industriais.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
-                    </div>
-                </div>
-                
-                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/linhaPU2.jpeg');"></div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-[#070F0A] mb-1">Protetores e Capas</h3>
-                        <p class="text-gray-600 text-sm mb-3">Protetores e capas para equipamentos e componentes.</p>
-                        <a href="/pages/contato.html" class="text-[#488A31] text-sm font-medium hover:underline">Mais Detalhes</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 bg-[#070F0A] text-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center animate-fadeIn">
-                <h2 class="text-3xl font-bold mb-6">Precisa de Soluções Personalizadas?</h2>
-                <p class="text-gray-300 max-w-2xl mx-auto mb-8">Nossa equipe está pronta para desenvolver produtos que atendam às suas necessidades específicas.</p>
-                <a href="/pages/contato.html" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
-                    Entre em Contato <i class="fas fa-arrow-right ml-2"></i>
-                </a>
+                </form>
             </div>
         </div>
     </section>
@@ -378,7 +141,7 @@
                         <li><a href="/pages/produtos.html#borracha" class="hover:text-[#488A31] transition duration-300">Borracha Natural</a></li>
                         <li><a href="/pages/produtos.html#poliuretano" class="hover:text-[#488A31] transition duration-300">Poliuretano Industrial</a></li>
                         <li><a href="/pages/produtos.html#personalizados" class="hover:text-[#488A31] transition duration-300">Produtos Personalizados</a></li>
-                        <li><a href="/pages/produtos.html#acessorios" class="hover:text-[#488A31] transition duration-300">Acessu00f3rios Industriais</a></li>
+                        <li><a href="/pages/produtos.html#acessorios" class="hover:text-[#488A31] transition duration-300">Acessórios Industriais</a></li>
                     </ul>
                 </div>
                 
@@ -395,7 +158,7 @@
             </div>
             
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <p>&copy; 2023 JAFA Indu00fastria de Borracha e Poliuretano. Todos os direitos reservados.</p>
+                <p>© 2023 JAFA Indústria de Borracha e Poliuretano. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
@@ -405,31 +168,44 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <!-- reCAPTCHA Script (Opcional) -->
+    <!-- Descomente se usar reCAPTCHA -->
+    <!--
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    -->
     <script src="/assets/js/main.js"></script>
     
-    <!-- Page-specific script to set active navigation -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Set produtos as active
-            document.getElementById('nav-produtos').classList.add('active-nav');
-            
-            // Smooth scroll for product category links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 100,
-                            behavior: 'smooth'
-                        });
-                    }
+    <!-- Submit de email -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Set contato as active
+        document.getElementById('nav-contato').classList.add('active-nav');
+
+        // Initialize EmailJS with your User ID
+        console.log('Inicializando EmailJS...');
+        emailjs.init('Ok64-M4HQ3FextxBn'); // Seu User ID do EmailJS
+        console.log('EmailJS inicializado com sucesso.');
+
+        // Handle form submission
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('Formulário enviado. Enviando dados via EmailJS...');
+
+            // Send form data via EmailJS
+            emailjs.sendForm('service_fi7c3su', 'template_yzys2w7', this)
+                .then(function(response) {
+                    console.log('Sucesso:', response);
+                    alert('Mensagem enviada com sucesso!');
+                    form.reset();
+                }, function(error) {
+                    console.error('Erro ao enviar:', error);
+                    alert('Erro ao enviar a mensagem: ' + JSON.stringify(error));
                 });
-            });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
