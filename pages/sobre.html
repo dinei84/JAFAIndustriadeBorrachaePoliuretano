@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - JAFA Indu00fastria de Borracha e Poliuretano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-[#070F0A] text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-industry text-2xl text-[#488A31]"></i>
+                    <a href="/index.html" class="font-bold text-xl">JAFA</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-200 hover:text-[#488A31]"
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="nav-link py-2 px-3" id="nav-home">HOME</a>
+                    <a href="/pages/sobre.html" class="nav-link py-2 px-3" id="nav-sobre">SOBRE</a>
+                    <a href="/pages/produtos.html" class="nav-link py-2 px-3" id="nav-produtos">PRODUTOS</a>
+                    <a href="/pages/contato.html" class="nav-link py-2 px-3" id="nav-contato">CONTATO</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-[#070F0A] pb-4">
+            <a href="/index.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">HOME</a>
+            <a href="/pages/sobre.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">SOBRE</a>
+            <a href="/pages/produtos.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">PRODUTOS</a>
+            <a href="/pages/contato.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">CONTATO</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-[#070F0A] text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">Sobre a JAFA</h1>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto animate-fadeIn">Conheça nossa história, missão, visão e valores</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 animate-slideInLeft">
+                    <img src="/assets/apresentacao.jpeg" alt="Fu00e1brica JAFA" class="rounded-xl shadow-xl w-full">
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12 animate-slideInRight">
+                    <h2 class="text-3xl font-bold text-[#070F0A] mb-6">Nossa História</h2>
+                    <p class="text-gray-700 mb-4">Fundada em 1990, a JAFA Indútria de Borracha e Poliuretano se consolidou como referência no mercado nacional, oferecendo soluções personalizadas para diversos segmentos industriais.</p>
+                    <p class="text-gray-700 mb-6">Com uma equipe altamente qualificada e equipamentos de ùltima geração, garantimos produtos que atendem às mais rigorosas especificações técnicas e normas de qualidade.</p>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-medium">Mais de 30 anos de experiência no mercado</span>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-medium">Equipe técnica especializada</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-medium">Infraestrutura moderna e adequada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-fadeIn">
+                <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Missão, Visão e Valores</h2>
+                <div class="w-24 h-1 bg-[#488A31] mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 animate-slideInLeft">
+                    <div class="text-[#488A31] text-4xl mb-4">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#070F0A] mb-3">Missão</h3>
+                    <p class="text-gray-600">Desenvolver e fornecer soluções em borracha e poliuretano com excelência, atendendo às necessidades dos clientes e contribuindo para o desenvolvimento sustentável.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 animate-fadeIn">
+                    <div class="text-[#488A31] text-4xl mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#070F0A] mb-3">Visão</h3>
+                    <p class="text-gray-600">Ser reconhecida como referência nacional em soluções de borracha e poliuretano, expandindo nossa atuação para o mercado internacional até 2030.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 animate-slideInRight">
+                    <div class="text-[#488A31] text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#070F0A] mb-3">Valores</h3>
+                    <p class="text-gray-600">Comprometimento, ética, inovação, qualidade, respeito ao meio ambiente e valorização das pessoas são os pilares que sustentam nossas ações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-fadeIn">
+                <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Nossa Equipe</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Profissionais qualificados e comprometidos com a excelência</p>
+                <div class="w-24 h-1 bg-[#488A31] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-slideInLeft">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('/assets/sobreDiretor.jpeg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#070F0A] mb-1">Paulo Sergio Souza</h3>
+                        <p class="text-[#488A31] font-medium mb-3">Diretor Executivo</p>
+                        <p class="text-gray-600 mb-4">Com mais de 25 anos de experiência no setor, lidera a empresa com visão estratégica e foco em inovação.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fadeIn">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('/assets/institucional.jpeg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#070F0A] mb-1">Maria Oliveira</h3>
+                        <p class="text-[#488A31] font-medium mb-3">Gerente de Produção</p>
+                        <p class="text-gray-600 mb-4">Especialista em processos industriais, garante a qualidade e eficiência na fabricação dos produtos.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-slideInRight">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('/assets/segmento.jpeg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#070F0A] mb-1">Carlos Santos</h3>
+                        <p class="text-[#488A31] font-medium mb-3">Engenheiro de Desenvolvimento</p>
+                        <p class="text-gray-600 mb-4">Responsável pela pesquisa e desenvolvimento de novos produtos e soluções personalizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 animate-fadeIn">
+                <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Nossos Clientes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Empresas que confiam em nossos produtos e serviços</p>
+                <div class="w-24 h-1 bg-[#488A31] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center animate-fadeIn">
+                <div class="bg-white p-6 rounded-lg shadow-md flex justify-center items-center h-24">
+                    <span class="text-xl font-bold text-gray-700">CLIENTE 1</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex justify-center items-center h-24">
+                    <span class="text-xl font-bold text-gray-700">CLIENTE 2</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex justify-center items-center h-24">
+                    <span class="text-xl font-bold text-gray-700">CLIENTE 3</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex justify-center items-center h-24">
+                    <span class="text-xl font-bold text-gray-700">CLIENTE 4</span>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="/pages/contato.html" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                    Seja Nosso Cliente <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#070F0A] text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-industry text-2xl text-[#488A31]"></i>
+                        <span class="font-bold text-xl text-white">JAFA</span>
+                    </div>
+                    <p class="max-w-xs">Especialistas em soluções de borracha e poliuretano para indústrias de diversos segmentos.</p>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/index.html" class="hover:text-[#488A31] transition duration-300">Home</a></li>
+                        <li><a href="/pages/sobre.html" class="hover:text-[#488A31] transition duration-300">Sobre</a></li>
+                        <li><a href="/pages/produtos.html" class="hover:text-[#488A31] transition duration-300">Produtos</a></li>
+                        <li><a href="/pages/contato.html" class="hover:text-[#488A31] transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-white font-bold mb-4">Produtos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/pages/produtos.html#borracha" class="hover:text-[#488A31] transition duration-300">Borracha Natural</a></li>
+                        <li><a href="/pages/produtos.html#poliuretano" class="hover:text-[#488A31] transition duration-300">Poliuretano Industrial</a></li>
+                        <li><a href="/pages/produtos.html#personalizados" class="hover:text-[#488A31] transition duration-300">Produtos Personalizados</a></li>
+                        <li><a href="/pages/produtos.html#acessorios" class="hover:text-[#488A31] transition duration-300">Acessu00f3rios Industriais</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Newsletter</h4>
+                    <p class="mb-4">Assine nossa newsletter para receber novidades.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button class="bg-[#488A31] hover:bg-[#3a7327] text-white px-4 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2023 JAFA Indu00fastria de Borracha e Poliuretano. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#488A31] text-white w-12 h-12 rounded-full shadow-lg hidden animate-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/assets/js/main.js"></script>
+    
+    <!-- Page-specific script to set active navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set sobre as active
+            document.getElementById('nav-sobre').classList.add('active-nav');
+        });
+    </script>
+</body>
+</html>

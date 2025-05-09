@@ -1,0 +1,77 @@
+    <!-- Footer -->
+    <footer class="bg-[#070F0A] text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-industry text-2xl text-[#488A31]"></i>
+                        <span class="font-bold text-xl text-white">JAFA</span>
+                    </div>
+                    <p class="max-w-xs">Especialistas em soluu00e7u00f5es de borracha e poliuretano para indu00fastrias de diversos segmentos.</p>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-white font-bold mb-4">Links Ru00e1pidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/index.html" class="hover:text-[#488A31] transition duration-300">Home</a></li>
+                        <li><a href="/pages/sobre.html" class="hover:text-[#488A31] transition duration-300">Sobre</a></li>
+                        <li><a href="/pages/produtos.html" class="hover:text-[#488A31] transition duration-300">Produtos</a></li>
+                        <li><a href="/pages/contato.html" class="hover:text-[#488A31] transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-white font-bold mb-4">Produtos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/pages/produtos.html#borracha" class="hover:text-[#488A31] transition duration-300">Borracha Natural</a></li>
+                        <li><a href="/pages/produtos.html#poliuretano" class="hover:text-[#488A31] transition duration-300">Poliuretano Industrial</a></li>
+                        <li><a href="/pages/produtos.html#personalizados" class="hover:text-[#488A31] transition duration-300">Produtos Personalizados</a></li>
+                        <li><a href="/pages/produtos.html#acessorios" class="hover:text-[#488A31] transition duration-300">Acessu00f3rios Industriais</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Newsletter</h4>
+                    <p class="mb-4">Assine nossa newsletter para receber novidades.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button class="bg-[#488A31] hover:bg-[#3a7327] text-white px-4 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2023 JAFA Indu00fastria de Borracha e Poliuretano. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#488A31] text-white w-12 h-12 rounded-full shadow-lg hidden animate-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/assets/js/main.js"></script>
+    
+    <!-- Page-specific script to set active navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get current page path
+            const path = window.location.pathname;
+            
+            // Set active navigation based on current page
+            if (path.includes('/pages/sobre.html')) {
+                document.getElementById('nav-sobre').classList.add('active-nav');
+            } else if (path.includes('/pages/produtos.html')) {
+                document.getElementById('nav-produtos').classList.add('active-nav');
+            } else if (path.includes('/pages/contato.html')) {
+                document.getElementById('nav-contato').classList.add('active-nav');
+            } else {
+                document.getElementById('nav-home').classList.add('active-nav');
+            }
+        });
+    </script>
+</body>
+</html>

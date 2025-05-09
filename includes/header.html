@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAFA - Indústria de Borracha e Poliuretano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-[#070F0A] text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-industry text-2xl text-[#488A31]"></i>
+                    <a href="/index.html" class="font-bold text-xl">JAFA</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-200 hover:text-[#488A31]"
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="nav-link py-2 px-3" id="nav-home">HOME</a>
+                    <a href="/pages/sobre.html" class="nav-link py-2 px-3" id="nav-sobre">SOBRE</a>
+                    <a href="/pages/produtos.html" class="nav-link py-2 px-3" id="nav-produtos">PRODUTOS</a>
+                    <a href="/pages/contato.html" class="nav-link py-2 px-3" id="nav-contato">CONTATO</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-[#070F0A] pb-4">
+            <a href="/index.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">HOME</a>
+            <a href="/pages/sobre.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">SOBRE</a>
+            <a href="/pages/produtos.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">PRODUTOS</a>
+            <a href="/pages/contato.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">CONTATO</a>
+        </div>
+    </nav>

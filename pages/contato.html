@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - JAFA Indu00fastria de Borracha e Poliuretano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-[#070F0A] text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-industry text-2xl text-[#488A31]"></i>
+                    <a href="/index.html" class="font-bold text-xl">JAFA</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-200 hover:text-[#488A31]"
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="nav-link py-2 px-3" id="nav-home">HOME</a>
+                    <a href="/pages/sobre.html" class="nav-link py-2 px-3" id="nav-sobre">SOBRE</a>
+                    <a href="/pages/produtos.html" class="nav-link py-2 px-3" id="nav-produtos">PRODUTOS</a>
+                    <a href="/pages/contato.html" class="nav-link py-2 px-3" id="nav-contato">CONTATO</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-[#070F0A] pb-4">
+            <a href="/index.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">HOME</a>
+            <a href="/pages/sobre.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">SOBRE</a>
+            <a href="/pages/produtos.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">PRODUTOS</a>
+            <a href="/pages/contato.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">CONTATO</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-[#070F0A] text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">Entre em Contato</h1>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto animate-fadeIn">Estamos prontos para atender suas necessidades em borracha e poliuretano</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8 animate-slideInLeft">
+                    <h3 class="text-2xl font-bold text-[#070F0A] mb-6">Informações de Contato</h3>
+                    
+                    <div class="mb-6 flex items-start">
+                        <div class="text-[#488A31] text-xl mr-4 mt-1">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#070F0A]">Endereço</h4>
+                            <p class="text-gray-600">Rua Industrial, 1234 - Bairro Industrial<br>Cidade - Estado - CEP 12345-678</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 flex items-start">
+                        <div class="text-[#488A31] text-xl mr-4 mt-1">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#070F0A]">Telefone</h4>
+                            <p class="text-gray-600">(11) 1234-5678<br>(11) 98765-4321 (WhatsApp)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 flex items-start">
+                        <div class="text-[#488A31] text-xl mr-4 mt-1">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#070F0A]">E-mail</h4>
+                            <p class="text-gray-600">contato@jafaindustria.com.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 flex items-start">
+                        <div class="text-[#488A31] text-xl mr-4 mt-1">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#070F0A]">Horário de Funcionamento</h4>
+                            <p class="text-gray-600">Segunda a Sexta: 8h às 18h<br>Su00e1bado: 8h às 12h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="w-10 h-10 bg-[#488A31] rounded-full flex items-center justify-center text-white hover:bg-[#3a7327] transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#488A31] rounded-full flex items-center justify-center text-white hover:bg-[#3a7327] transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#488A31] rounded-full flex items-center justify-center text-white hover:bg-[#3a7327] transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#488A31] rounded-full flex items-center justify-center text-white hover:bg-[#3a7327] transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 animate-slideInRight">
+                    <form class="bg-gray-50 rounded-lg shadow-xl p-8">
+                        <h3 class="text-2xl font-bold text-[#070F0A] mb-6">Envie uma Mensagem</h3>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="name">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="email">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="phone">Telefone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="subject">Assunto</label>
+                            <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]">
+                                <option value="">Selecione um assunto</option>
+                                <option value="orcamento">Solicitação de Orçamento</option>
+                                <option value="duvidas">Dúvidas sobre Produtos</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2" for="message">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                            Enviar Mensagem <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 animate-fadeIn">
+                <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Nossa Localização</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Venha nos visitar e conhecer nossa fábrica</p>
+                <div class="w-24 h-1 bg-[#488A31] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="rounded-xl overflow-hidden shadow-xl h-96 animate-fadeIn">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.65342658502217!3d-23.565734367638793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623703684255!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 animate-fadeIn">
+                <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Perguntas Frequentes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Respostas para as dúvidas mais comuns</p>
+                <div class="w-24 h-1 bg-[#488A31] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 bg-gray-50 rounded-lg p-6 shadow-md animate-fadeIn">
+                    <h3 class="text-xl font-bold text-[#070F0A] mb-2">Qual o prazo de entrega dos produtos?</h3>
+                    <p class="text-gray-600">O prazo de entrega varia de acordo com o produto e a quantidade solicitada. Para produtos em estoque, a entrega é realizada em até 5 dias úteis. Para produtos personalizados, o prazo é definido após análise do projeto.</p>
+                </div>
+                
+                <div class="mb-6 bg-gray-50 rounded-lg p-6 shadow-md animate-fadeIn">
+                    <h3 class="text-xl font-bold text-[#070F0A] mb-2">Vocês atendem todo o Brasil?</h3>
+                    <p class="text-gray-600">Sim, realizamos entregas para todo o território nacional. Para regiões mais distantes, o prazo de entrega pode ser maior e haver custos adicionais de frete.</p>
+                </div>
+                
+                <div class="mb-6 bg-gray-50 rounded-lg p-6 shadow-md animate-fadeIn">
+                    <h3 class="text-xl font-bold text-[#070F0A] mb-2">Como solicitar um orçamento?</h3>
+                    <p class="text-gray-600">Você pode solicitar um orçamento através do formulário de contato nesta página, por e-mail ou telefone. Para produtos personalizados, é recomendável enviar desenhos técnicos ou especificações detalhadas.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md animate-fadeIn">
+                    <h3 class="text-xl font-bold text-[#070F0A] mb-2">Vocês oferecem garantia para os produtos?</h3>
+                    <p class="text-gray-600">Sim, todos os nossos produtos possuem garantia contra defeitos de fabricação. O período de garantia varia de acordo com o tipo de produto e está especificado na nota fiscal de compra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#070F0A] text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-industry text-2xl text-[#488A31]"></i>
+                        <span class="font-bold text-xl text-white">JAFA</span>
+                    </div>
+                    <p class="max-w-xs">Especialistas em soluu00e7u00f5es de borracha e poliuretano para indu00fastrias de diversos segmentos.</p>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-white font-bold mb-4">Links Ru00e1pidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/index.html" class="hover:text-[#488A31] transition duration-300">Home</a></li>
+                        <li><a href="/pages/sobre.html" class="hover:text-[#488A31] transition duration-300">Sobre</a></li>
+                        <li><a href="/pages/produtos.html" class="hover:text-[#488A31] transition duration-300">Produtos</a></li>
+                        <li><a href="/pages/contato.html" class="hover:text-[#488A31] transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-white font-bold mb-4">Produtos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/pages/produtos.html#borracha" class="hover:text-[#488A31] transition duration-300">Borracha Natural</a></li>
+                        <li><a href="/pages/produtos.html#poliuretano" class="hover:text-[#488A31] transition duration-300">Poliuretano Industrial</a></li>
+                        <li><a href="/pages/produtos.html#personalizados" class="hover:text-[#488A31] transition duration-300">Produtos Personalizados</a></li>
+                        <li><a href="/pages/produtos.html#acessorios" class="hover:text-[#488A31] transition duration-300">Acessu00f3rios Industriais</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Newsletter</h4>
+                    <p class="mb-4">Assine nossa newsletter para receber novidades.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button class="bg-[#488A31] hover:bg-[#3a7327] text-white px-4 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2023 JAFA Indu00fastria de Borracha e Poliuretano. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#488A31] text-white w-12 h-12 rounded-full shadow-lg hidden animate-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/assets/js/main.js"></script>
+    
+    <!-- Page-specific script to set active navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set contato as active
+            document.getElementById('nav-contato').classList.add('active-nav');
+        });
+    </script>
+</body>
+</html>

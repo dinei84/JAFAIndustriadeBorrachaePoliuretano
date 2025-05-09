@@ -6,100 +6,7 @@
     <title>JAFA - Indústria de Borracha e Poliuretano</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Custom CSS */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        .animate-fadeIn {
-            animation: fadeIn 1s ease-in-out;
-        }
-        
-        .animate-slideInLeft {
-            animation: slideInLeft 1s ease-out;
-        }
-        
-        .animate-slideInRight {
-            animation: slideInRight 1s ease-out;
-        }
-        
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        .hero-slide {
-            transition: opacity 0.5s ease-in-out;
-        }
-        
-        .section-divider {
-            position: relative;
-            height: 100px;
-            overflow: hidden;
-        }
-        
-        .section-divider::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            height: 100%;
-            background: linear-gradient(135deg, #070F0A 25%, transparent 25%) -50px 0,
-                        linear-gradient(225deg, #070F0A 25%, transparent 25%) -50px 0,
-                        linear-gradient(315deg, #070F0A 25%, transparent 25%),
-                        linear-gradient(45deg, #070F0A 25%, transparent 25%);
-            background-size: 100px 100px;
-            transform: rotate(180deg);
-        }
-        
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .product-card {
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #488A31;
-            transition: width 0.3s;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .active-nav::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 2px;
-            background: #488A31;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- Navigation -->
@@ -108,7 +15,7 @@
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-2">
                     <i class="fas fa-industry text-2xl text-[#488A31]"></i>
-                    <span class="font-bold text-xl">JAFA</span>
+                    <a href="/index.html" class="font-bold text-xl">JAFA</a>
                 </div>
                 
                 <!-- Mobile menu button -->
@@ -129,20 +36,20 @@
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link active-nav py-2 px-3">HOME</a>
-                    <a href="#sobre" class="nav-link py-2 px-3">SOBRE</a>
-                    <a href="#produtos" class="nav-link py-2 px-3">PRODUTOS</a>
-                    <a href="#contato" class="nav-link py-2 px-3">CONTATO</a>
+                    <a href="/index.html" class="nav-link py-2 px-3" id="nav-home">HOME</a>
+                    <a href="/pages/sobre.html" class="nav-link py-2 px-3" id="nav-sobre">SOBRE</a>
+                    <a href="/pages/produtos.html" class="nav-link py-2 px-3" id="nav-produtos">PRODUTOS</a>
+                    <a href="/pages/contato.html" class="nav-link py-2 px-3" id="nav-contato">CONTATO</a>
                 </div>
             </div>
         </div>
         
         <!-- Mobile Menu -->
         <div class="mobile-menu hidden md:hidden bg-[#070F0A] pb-4">
-            <a href="#home" class="block py-2 px-4 text-sm hover:bg-[#488A31]">HOME</a>
-            <a href="#sobre" class="block py-2 px-4 text-sm hover:bg-[#488A31]">SOBRE</a>
-            <a href="#produtos" class="block py-2 px-4 text-sm hover:bg-[#488A31]">PRODUTOS</a>
-            <a href="#contato" class="block py-2 px-4 text-sm hover:bg-[#488A31]">CONTATO</a>
+            <a href="/index.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">HOME</a>
+            <a href="/pages/sobre.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">SOBRE</a>
+            <a href="/pages/produtos.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">PRODUTOS</a>
+            <a href="/pages/contato.html" class="block py-2 px-4 text-sm hover:bg-[#488A31]">CONTATO</a>
         </div>
     </nav>
 
@@ -154,10 +61,10 @@
                     <h1 class="text-4xl md:text-5xl font-bold mb-4">Soluções em Borracha e Poliuretano</h1>
                     <p class="text-lg mb-6 text-gray-300">Excelência industrial desde 1990, oferecendo produtos de alta qualidade para diversos setores.</p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#contato" class="bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                        <a href="/pages/contato.html" class="bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
                             Fale Conosco <i class="fas fa-arrow-right ml-2"></i>
                         </a>
-                        <a href="#produtos" class="border-2 border-[#488A31] text-[#488A31] hover:bg-[#488A31] hover:text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                        <a href="/pages/produtos.html" class="border-2 border-[#488A31] text-[#488A31] hover:bg-[#488A31] hover:text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
                             Nossos Produtos <i class="fas fa-box-open ml-2"></i>
                         </a>
                     </div>
@@ -207,54 +114,17 @@
                     <p class="text-gray-600">Logística eficiente para entregar seus produtos no prazo combinado.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="py-16 bg-gray-100">
-        <div class="section-divider"></div>
-        <div class="container mx-auto px-4 pt-16">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 animate-slideInLeft">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fábrica JAFA" class="rounded-xl shadow-xl w-full">
-                </div>
-                
-                <div class="md:w-1/2 md:pl-12 animate-slideInRight">
-                    <h2 class="text-3xl font-bold text-[#070F0A] mb-6">Sobre a JAFA</h2>
-                    <p class="text-gray-700 mb-4">Fundada em 1990, a JAFA Indústria de Borracha e Poliuretano se consolidou como referência no mercado nacional, oferecendo soluções personalizadas para diversos segmentos industriais.</p>
-                    <p class="text-gray-700 mb-6">Com uma equipe altamente qualificada e equipamentos de última geração, garantimos produtos que atendem às mais rigorosas especificações técnicas e normas de qualidade.</p>
-                    
-                    <div class="mb-6">
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Mais de 30 anos de experiência no mercado</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Equipe técnica especializada</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-[#488A31] rounded-full flex items-center justify-center text-white mr-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="font-medium">Infraestrutura moderna e adequada</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#contato" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                        Saiba Mais <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
+            
+            <div class="text-center mt-12">
+                <a href="/pages/sobre.html" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                    Conheça Nossa História <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
         </div>
     </section>
-
-    <!-- Products Section -->
-    <section id="produtos" class="py-16 bg-white">
+    
+    <!-- Preview Products Section -->
+    <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 animate-fadeIn">
                 <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Nossos Produtos</h2>
@@ -263,176 +133,41 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="product-card bg-gray-50 rounded-xl overflow-hidden shadow-md animate-slideInLeft">
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md animate-slideInLeft">
                     <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#070F0A] mb-2">Borracha Natural</h3>
                         <p class="text-gray-600 mb-4">Produtos fabricados com borracha natural de alta qualidade para diversas aplicações.</p>
-                        <a href="#contato" class="text-[#488A31] font-medium hover:underline">Solicitar Orçamento <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="/pages/produtos.html#borracha" class="text-[#488A31] font-medium hover:underline">Ver Detalhes <i class="fas fa-arrow-right ml-1"></i></a>
                     </div>
                 </div>
                 
-                <div class="product-card bg-gray-50 rounded-xl overflow-hidden shadow-md animate-fadeIn">
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md animate-fadeIn">
                     <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581094276643-2c36b1d6e4b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#070F0A] mb-2">Poliuretano Industrial</h3>
                         <p class="text-gray-600 mb-4">Materiais em poliuretano com excelente resistência à abrasão e produtos químicos.</p>
-                        <a href="#contato" class="text-[#488A31] font-medium hover:underline">Solicitar Orçamento <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="/pages/produtos.html#poliuretano" class="text-[#488A31] font-medium hover:underline">Ver Detalhes <i class="fas fa-arrow-right ml-1"></i></a>
                     </div>
                 </div>
                 
-                <div class="product-card bg-gray-50 rounded-xl overflow-hidden shadow-md animate-slideInRight">
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md animate-slideInRight">
                     <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581094276643-fc449965e0a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#070F0A] mb-2">Produtos Personalizados</h3>
                         <p class="text-gray-600 mb-4">Desenvolvemos soluções sob medida para atender às necessidades específicas de cada cliente.</p>
-                        <a href="#contato" class="text-[#488A31] font-medium hover:underline">Solicitar Orçamento <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="/pages/produtos.html#personalizados" class="text-[#488A31] font-medium hover:underline">Ver Detalhes <i class="fas fa-arrow-right ml-1"></i></a>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-12 animate-fadeIn">
-                <a href="#contato" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+                <a href="/pages/produtos.html" class="inline-block bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
                     Ver Todos os Produtos <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
         </div>
     </section>
-
-    <!-- Clients Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12 animate-fadeIn">
-                <h2 class="text-3xl font-bold text-[#070F0A] mb-4">Nossos Clientes</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Empresas que confiam em nossos produtos e serviços</p>
-                <div class="w-24 h-1 bg-[#488A31] mx-auto mt-4"></div>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center animate-fadeIn">
-                <div class="bg-white p-6 rounded-lg shadow-md flex justify-center items-center h-24">
-                    <span class="text-xl font-bold text-gray-700">CLIENTE 1</span>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex justify-center items-center h-24">
-                    <span class="text-xl font-bold text-gray-700">CLIENTE 2</span>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex justify-center items-center h-24">
-                    <span class="text-xl font-bold text-gray-700">CLIENTE 3</span>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex justify-center items-center h-24">
-                    <span class="text-xl font-bold text-gray-700">CLIENTE 4</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contato" class="py-16 bg-[#070F0A] text-white">
-        <div class="section-divider"></div>
-        <div class="container mx-auto px-4 pt-16">
-            <div class="text-center mb-16 animate-fadeIn">
-                <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
-                <p class="text-gray-300 max-w-2xl mx-auto">Estamos prontos para atender suas necessidades em borracha e poliuretano</p>
-                <div class="w-24 h-1 bg-[#488A31] mx-auto mt-4"></div>
-            </div>
-            
-            <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8 animate-slideInLeft">
-                    <h3 class="text-xl font-bold mb-6">Informações de Contato</h3>
-                    
-                    <div class="mb-6 flex items-start">
-                        <div class="text-[#488A31] text-xl mr-4 mt-1">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Endereço</h4>
-                            <p class="text-gray-300">Rua Industrial, 1234 - Bairro Industrial<br>Cidade - Estado - CEP 12345-678</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-6 flex items-start">
-                        <div class="text-[#488A31] text-xl mr-4 mt-1">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Telefone</h4>
-                            <p class="text-gray-300">(11) 1234-5678<br>(11) 98765-4321 (WhatsApp)</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-6 flex items-start">
-                        <div class="text-[#488A31] text-xl mr-4 mt-1">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">E-mail</h4>
-                            <p class="text-gray-300">contato@jafaindustria.com.br</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex space-x-4 mt-8">
-                        <a href="#" class="w-10 h-10 bg-[#488A31] rounded-full flex items-center justify-center text-white hover:bg-[#3a7327] transition duration-300">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-[#488A31] rounded-full flex items-center justify-center text-white hover:bg-[#3a7327] transition duration-300">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-[#488A31] rounded-full flex items-center justify-center text-white hover:bg-[#3a7327] transition duration-300">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-[#488A31] rounded-full flex items-center justify-center text-white hover:bg-[#3a7327] transition duration-300">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="md:w-1/2 animate-slideInRight">
-                    <form class="bg-white rounded-lg shadow-xl p-8 text-[#070F0A]">
-                        <h3 class="text-xl font-bold mb-6">Envie uma Mensagem</h3>
-                        
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="name">Nome</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]">
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="email">E-mail</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]">
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="phone">Telefone</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]">
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="subject">Assunto</label>
-                            <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]">
-                                <option value="">Selecione um assunto</option>
-                                <option value="orcamento">Solicitação de Orçamento</option>
-                                <option value="duvidas">Dúvidas sobre Produtos</option>
-                                <option value="suporte">Suporte Técnico</option>
-                                <option value="outros">Outros</option>
-                            </select>
-                        </div>
-                        
-                        <div class="mb-6">
-                            <label class="block text-gray-700 font-medium mb-2" for="message">Mensagem</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#488A31]"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="w-full bg-[#488A31] hover:bg-[#3a7327] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                            Enviar Mensagem <i class="fas fa-paper-plane ml-2"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <div class="h-96 bg-gray-200 animate-fadeIn">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.65342658502217!3d-23.565734367638793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623703684255!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-[#070F0A] text-gray-300 py-12">
@@ -449,20 +184,20 @@
                 <div class="mb-8 md:mb-0">
                     <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="hover:text-[#488A31] transition duration-300">Home</a></li>
-                        <li><a href="#sobre" class="hover:text-[#488A31] transition duration-300">Sobre</a></li>
-                        <li><a href="#produtos" class="hover:text-[#488A31] transition duration-300">Produtos</a></li>
-                        <li><a href="#contato" class="hover:text-[#488A31] transition duration-300">Contato</a></li>
+                        <li><a href="/index.html" class="hover:text-[#488A31] transition duration-300">Home</a></li>
+                        <li><a href="/pages/sobre.html" class="hover:text-[#488A31] transition duration-300">Sobre</a></li>
+                        <li><a href="/pages/produtos.html" class="hover:text-[#488A31] transition duration-300">Produtos</a></li>
+                        <li><a href="/pages/contato.html" class="hover:text-[#488A31] transition duration-300">Contato</a></li>
                     </ul>
                 </div>
                 
                 <div class="mb-8 md:mb-0">
                     <h4 class="text-white font-bold mb-4">Produtos</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-[#488A31] transition duration-300">Borracha Natural</a></li>
-                        <li><a href="#" class="hover:text-[#488A31] transition duration-300">Poliuretano Industrial</a></li>
-                        <li><a href="#" class="hover:text-[#488A31] transition duration-300">Produtos Personalizados</a></li>
-                        <li><a href="#" class="hover:text-[#488A31] transition duration-300">Acessórios Industriais</a></li>
+                        <li><a href="/pages/produtos.html#borracha" class="hover:text-[#488A31] transition duration-300">Borracha Natural</a></li>
+                        <li><a href="/pages/produtos.html#poliuretano" class="hover:text-[#488A31] transition duration-300">Poliuretano Industrial</a></li>
+                        <li><a href="/pages/produtos.html#personalizados" class="hover:text-[#488A31] transition duration-300">Produtos Personalizados</a></li>
+                        <li><a href="/pages/produtos.html#acessorios" class="hover:text-[#488A31] transition duration-300">Acessórios Industriais</a></li>
                     </ul>
                 </div>
                 
@@ -489,96 +224,14 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <script src="/assets/js/main.js"></script>
+    
+    <!-- Page-specific script to set active navigation -->
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.querySelector('.mobile-menu-button');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set home as active
+            document.getElementById('nav-home').classList.add('active-nav');
         });
-        
-        // Hero slider
-        const heroSlides = document.querySelectorAll('.hero-slide');
-        let currentSlide = 0;
-        
-        function showSlide(n) {
-            heroSlides.forEach(slide => {
-                slide.style.opacity = '0';
-            });
-            
-            heroSlides[n].style.opacity = '1';
-        }
-        
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % heroSlides.length;
-            showSlide(currentSlide);
-        }
-        
-        // Start slider
-        showSlide(0);
-        setInterval(nextSlide, 5000);
-        
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Close mobile menu if open
-                mobileMenu.classList.add('hidden');
-                
-                // Update active nav link
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    link.classList.remove('active-nav');
-                });
-                this.classList.add('active-nav');
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Back to top button
-        const backToTopButton = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('hidden');
-            } else {
-                backToTopButton.classList.add('hidden');
-            }
-        });
-        
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Animation on scroll
-        const animateElements = document.querySelectorAll('.animate-slideInLeft, .animate-slideInRight, .animate-fadeIn');
-        
-        function checkScroll() {
-            animateElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (elementTop < windowHeight - 100) {
-                    element.style.opacity = '1';
-                }
-            });
-        }
-        
-        window.addEventListener('scroll', checkScroll);
-        window.addEventListener('load', checkScroll);
     </script>
 </body>
 </html>
