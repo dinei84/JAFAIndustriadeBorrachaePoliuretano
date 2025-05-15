@@ -133,9 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
         isDragging = false;
     });
 
-    // Get all product cards
-    const productCards = document.querySelectorAll('.product-card');
-
     // Function to open modal
     function openModal(imageUrl, title) {
         // Reset zoom and position
@@ -167,17 +164,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Add click event to each product card image
-    productCards.forEach(card => {
-        const imageDiv = card.querySelector('.bg-cover');
-        const title = card.querySelector('h3').textContent;
-        const backgroundImage = imageDiv.style.backgroundImage;
-        const imageUrl = backgroundImage.replace(/url\(['"]?([^'"]*)['"]/g, '$1');
-
-        imageDiv.addEventListener('click', function(e) {
-            e.preventDefault();
-            openModal(imageUrl, title);
+    function setupProductCards() {
+        const productCards = document.querySelectorAll('.product-card');
+        
+        productCards.forEach(card => {
+            const imageDiv = card.querySelector('.bg-cover');
+            if (!imageDiv) return;
+            
+            const title = card.querySelector('h3') ? card.querySelector('h3').textContent : 'Produto';
+            const backgroundImageStyle = window.getComputedStyle(imageDiv).backgroundImage;
+            const imageUrl = backgroundImageStyle.replace(/url\(['"]*([^'"]*)['"]\)/g, '$1');
+            
+            imageDiv.addEventListener('click', function(e) {
+                e.preventDefault();
+                openModal(imageUrl, title);
+            });
         });
-    });
+    }
+    
+    // Setup product cards when DOM is loaded
+    setupProductCards();
 
     // Close modal when clicking the close button
     closeButton.addEventListener('click', closeModal);
