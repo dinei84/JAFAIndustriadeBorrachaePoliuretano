@@ -7,6 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        .hero-slide {
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-slide.active {
+            opacity: 1;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- Navigation -->
@@ -38,7 +55,7 @@
                 <div class="hidden md:flex space-x-8">
                     <a href="/index.html" class="nav-link py-2 px-3" id="nav-home">HOME</a>
                     <a href="/pages/sobre.html" class="nav-link py-2 px-3" id="nav-sobre">SOBRE</a>
-                    <a href="/pages/produtos.html" class="nav-link py-2 px-3" id="nav-produtos">PRODUTOS</a>
+                    <a href="pages/produtos.html" class="nav-link py-2 px-3" id="nav-produtos">PRODUTOS</a>
                     <a href="/pages/contato.html" class="nav-link py-2 px-3" id="nav-contato">CONTATO</a>
                 </div>
             </div>
@@ -72,9 +89,11 @@
                 
                 <div class="md:w-1/2 animate-slideInRight">
                     <div class="relative overflow-hidden rounded-xl shadow-2xl h-80">
-                        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581093450021-55a75f012a0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
-                        <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
-                        <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('https://images.unsplash.com/photo-1581094271907-658e2d6e9e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="hero-slide absolute inset-0 bg-cover bg-center active" style="background-image: url('/assets/slide1.jpeg');"></div>
+                        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image: url('/assets/slide2.jpeg');"></div>
+                        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image: url('/assets/slide3.jpeg');"></div>
+                        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image: url('/assets/slide4.jpeg');"></div>
+                        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image: url('/assets/slide5.jpeg');"></div>
                     </div>
                 </div>
             </div>
@@ -134,7 +153,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="product-card bg-white rounded-xl overflow-hidden shadow-md animate-slideInLeft">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');"></div>
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/produto1.jpeg');"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#070F0A] mb-2">Borracha Natural</h3>
                         <p class="text-gray-600 mb-4">Produtos fabricados com borracha natural de alta qualidade para diversas aplicações.</p>
@@ -143,7 +162,7 @@
                 </div>
                 
                 <div class="product-card bg-white rounded-xl overflow-hidden shadow-md animate-fadeIn">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581094276643-2c36b1d6e4b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/produto2.jpeg');"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#070F0A] mb-2">Poliuretano Industrial</h3>
                         <p class="text-gray-600 mb-4">Materiais em poliuretano com excelente resistência à abrasão e produtos químicos.</p>
@@ -152,7 +171,7 @@
                 </div>
                 
                 <div class="product-card bg-white rounded-xl overflow-hidden shadow-md animate-slideInRight">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581094276643-fc449965e0a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/assets/produto3.jpeg');"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#070F0A] mb-2">Produtos Personalizados</h3>
                         <p class="text-gray-600 mb-4">Desenvolvemos soluções sob medida para atender às necessidades específicas de cada cliente.</p>
@@ -194,43 +213,49 @@
                 <div class="mb-8 md:mb-0">
                     <h4 class="text-white font-bold mb-4">Produtos</h4>
                     <ul class="space-y-2">
-                        <li><a href="/pages/produtos.html#borracha" class="hover:text-[#488A31] transition duration-300">Borracha Natural</a></li>
+                        <li><a href="/pages/produtos.html#borracha" class="hover:text-[#488A31] transition duration-300">Borracha</a></li>
                         <li><a href="/pages/produtos.html#poliuretano" class="hover:text-[#488A31] transition duration-300">Poliuretano Industrial</a></li>
                         <li><a href="/pages/produtos.html#personalizados" class="hover:text-[#488A31] transition duration-300">Produtos Personalizados</a></li>
                         <li><a href="/pages/produtos.html#acessorios" class="hover:text-[#488A31] transition duration-300">Acessórios Industriais</a></li>
                     </ul>
                 </div>
-                
-                <div>
-                    <h4 class="text-white font-bold mb-4">Newsletter</h4>
-                    <p class="mb-4">Assine nossa newsletter para receber novidades.</p>
-                    <div class="flex">
-                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
-                        <button class="bg-[#488A31] hover:bg-[#3a7327] text-white px-4 rounded-r-lg">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <p>&copy; 2023 JAFA Indústria de Borracha e Poliuretano. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#488A31] text-white w-12 h-12 rounded-full shadow-lg hidden animate-float">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="/assets/js/main.js"></script>
-    
-    <!-- Page-specific script to set active navigation -->
     <script>
+        // Mobile menu functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // Set home as active
-            document.getElementById('nav-home').classList.add('active-nav');
+            // Mobile menu toggle
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+            
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+
+            // Slideshow functionality
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                // Remove active class from all slides
+                slides.forEach(slide => slide.classList.remove('active'));
+                
+                // Add active class to current slide
+                slides[index].classList.add('active');
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            // Show first slide immediately
+            showSlide(0);
+            
+            // Change slide every 5 seconds
+            setInterval(nextSlide, 7000);
         });
     </script>
 </body>
